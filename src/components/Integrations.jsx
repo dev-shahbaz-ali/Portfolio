@@ -16,57 +16,46 @@ const integrations = [
   {
     name: "Microsoft Teams",
     icon: <BsMicrosoftTeams className="w-6 h-6" />,
-    color: "from-blue-500 to-indigo-500",
   },
   {
     name: "Power BI",
     icon: <span className="text-2xl">📊</span>,
-    color: "from-yellow-500 to-orange-500",
   },
   {
     name: "Google Analytics",
     icon: <SiGoogleanalytics className="w-6 h-6" />,
-    color: "from-orange-500 to-red-500",
   },
   {
     name: "QuickBooks",
     icon: <SiQuickbooks className="w-6 h-6" />,
-    color: "from-green-500 to-emerald-500",
   },
   {
     name: "OpenAI",
     icon: <RiOpenaiFill className="w-6 h-6" />,
-    color: "from-teal-500 to-cyan-500",
   },
   {
     name: "Google Drive",
     icon: <SiGoogledrive className="w-6 h-6" />,
-    color: "from-green-400 to-blue-500",
   },
   {
     name: "Microsoft Office",
     icon: <BsMicrosoft className="w-6 h-6" />,
-    color: "from-red-500 to-orange-500",
   },
   {
     name: "Salesforce",
     icon: <FaSalesforce className="w-6 h-6" />,
-    color: "from-blue-400 to-cyan-400",
   },
   {
     name: "Slack",
     icon: <SiSlack className="w-6 h-6" />,
-    color: "from-purple-500 to-pink-500",
   },
   {
     name: "Jira",
     icon: <SiJira className="w-6 h-6" />,
-    color: "from-blue-600 to-indigo-600",
   },
   {
     name: "Trello",
     icon: <BsTrello className="w-6 h-6" />,
-    color: "from-sky-400 to-blue-500",
   },
 ];
 
@@ -110,9 +99,9 @@ export const Integrations = () => {
                 key={`row1-${idx}`}
                 className="w-[180px] h-[100px] rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 p-4 hover:border-cyan-400/50 transition-all duration-300 group/card cursor-default"
               >
-                <div className="flex items-center gap-3 h-full">
+                <div className="flex flex-col items-center h-full">
                   <div
-                    className={`text-2xl bg-gradient-to-br ${item.color} p-2 rounded-lg text-white`}
+                    className={`text-2xl bg-gradient-to-br p-2 rounded-lg text-white`}
                   >
                     {item.icon}
                   </div>
@@ -139,9 +128,9 @@ export const Integrations = () => {
                 key={`row1-duplicate-${idx}`}
                 className="w-[180px] h-[100px] rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 p-4 hover:border-cyan-400/50 transition-all duration-300 group/card cursor-default"
               >
-                <div className="flex items-center gap-3 h-full">
+                <div className="flex flex-col items-center h-full">
                   <div
-                    className={`text-2xl bg-gradient-to-br ${item.color} p-2 rounded-lg text-white`}
+                    className={`text-2xl bg-gradient-to-br p-2 rounded-lg text-white`}
                   >
                     {item.icon}
                   </div>
